@@ -31,6 +31,11 @@ Route::group(['prefix' => 'basic-ui'], function(){
     Route::get('tooltips', function () { return view('pages.basic-ui.tooltips'); });
 });
 
+Route::group(['prefix' => 'masterdata'], function(){
+    Route::get('kelurahan', function () { return view('pages.masterdata.kelurahan'); });
+
+});
+
 Route::group(['prefix' => 'advanced-ui'], function(){
     Route::get('dragula', function () { return view('pages.advanced-ui.dragula'); });
     Route::get('clipboard', function () { return view('pages.advanced-ui.clipboard'); });
